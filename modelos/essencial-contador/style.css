@@ -1,0 +1,30 @@
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+a{color:inherit}
+.demo{background:#111;color:#ddd;font:500 12px system-ui;text-align:center;padding:8px}
+.wa{position:fixed;right:16px;bottom:16px;background:#25D366;color:#063;font:600 15px system-ui;text-decoration:none;padding:12px 18px;border-radius:99px;z-index:99}
+.pg{display:none}
+.pg.on{display:block}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}
+html{scroll-behavior:auto}
+.mq span{padding-left:0!important}}
+body{font:16px/1.55 'IBM Plex Sans',sans-serif;color:#0F1F3D;background:linear-gradient(#E6EBF5 1px,transparent 1px) 0 0/40px 40px,linear-gradient(90deg,#E6EBF5 1px,transparent 1px) 0 0/40px 40px,#fff}
+.fx{display:flex;gap:10px;align-items:center;background:#F0F4FF;border-bottom:2px solid #1F4FD8;padding:10px 22px;font:500 .85rem 'IBM Plex Mono',monospace;position:sticky;top:0;z-index:5;overflow-x:auto;white-space:nowrap}
+.fx b{background:#1F4FD8;color:#fff;padding:2px 8px}
+.w{max-width:960px;margin:auto;padding:0 22px 80px}
+h1{font:600 clamp(2rem,5vw,3.4rem)/1.1 'IBM Plex Mono',monospace;margin:60px 0 16px}
+h1 u{text-decoration:none;background:#1F4FD8;color:#fff;padding:0 .2em}
+table{width:100%;min-width:540px;border-collapse:collapse;background:#fff;margin:24px 0;font-size:.95rem}
+th,td{border:1px solid #C9D3EA;padding:12px;text-align:left}
+th{background:#E8EEFF;font:600 .8rem 'IBM Plex Mono'}
+td:first-child,th:first-child{width:44px;text-align:center;background:#E8EEFF;font-family:'IBM Plex Mono'}
+.cal{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border:1px solid #C9D3EA;background:#fff}
+.cal div{padding:16px;border-right:1px solid #C9D3EA}
+.cal b{display:block;font:600 1.5rem 'IBM Plex Mono'}
+h2{font:600 1rem 'IBM Plex Mono';margin:50px 0 6px;color:#1F4FD8}
+form{display:grid;grid-template-columns:1fr 1fr;max-width:640px;border:1px solid #C9D3EA;background:#fff}
+form input,form textarea{border:1px solid #C9D3EA;padding:12px;font:inherit}
+form textarea{grid-column:span 2}
+form button{grid-column:span 2;background:#1F4FD8;color:#fff;border:0;padding:14px;font:600 1rem 'IBM Plex Mono';cursor:pointer}
+@media(max-width:600px){form{grid-template-columns:1fr}
+form textarea,form button{grid-column:auto}}

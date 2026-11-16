@@ -1,0 +1,36 @@
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+a{color:inherit}
+.demo{background:#111;color:#ddd;font:500 12px system-ui;text-align:center;padding:8px}
+.wa{position:fixed;right:16px;bottom:16px;background:#25D366;color:#063;font:600 15px system-ui;text-decoration:none;padding:12px 18px;border-radius:99px;z-index:99}
+.pg{display:none}
+.pg.on{display:block}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}
+html{scroll-behavior:auto}
+.mq span{padding-left:0!important}}
+body{background:#EFEFEB;color:#111;font:16px/1.5 'Space Grotesk',sans-serif}
+.h{display:flex;justify-content:space-between;padding:24px 4vw;font-weight:700}
+.h span{font-weight:400}
+h1{font:700 clamp(4rem,18vw,15rem)/.8 'Space Grotesk';letter-spacing:-.06em;padding:6vh 4vw 3vh}
+.int{display:grid;grid-template-columns:1fr 2fr;gap:4vw;padding:0 4vw 6vh}
+.int p{font-size:1.25rem}
+.gal{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;padding:0 4vw}
+.pj{position:relative;min-height:240px;background:#111}
+.pj span{position:absolute;left:12px;bottom:10px;color:#fff;font-size:.85rem}
+.pj:nth-child(1){grid-column:span 4;min-height:380px;background:repeating-linear-gradient(90deg,#222 0 2px,#C8C8BF 2px 38px)}
+.pj:nth-child(1) span{background:#111;padding:2px 6px}
+.pj:nth-child(2){grid-column:span 2;background:#C6FF3D}
+.pj:nth-child(2) span{color:#111}
+.pj:nth-child(3){grid-column:span 2;background:linear-gradient(135deg,#111 50%,#E8E8E0 50%)}
+.pj:nth-child(4){grid-column:span 4;background:linear-gradient(#111 1px,transparent 1px) 0 0/60px 60px,linear-gradient(90deg,#111 1px,transparent 1px) 0 0/60px 60px,#fff}
+.pj:nth-child(4) span{color:#111;background:#fff;padding:2px 6px}
+.idx{padding:8vh 4vw}
+.idx div{display:grid;grid-template-columns:60px 1fr auto;gap:12px;border-top:1px solid #111;padding:16px 0;font-size:1.15rem}
+.idx div:last-child{border-bottom:1px solid #111}
+.ct{background:#111;color:#EFEFEB;padding:8vh 4vw 12vh}
+.ct h2{font:700 clamp(2rem,7vw,5rem)/1 'Space Grotesk';letter-spacing:-.04em}
+.ct form{display:grid;gap:10px;max-width:480px;margin-top:24px}
+.ct input,.ct textarea{background:transparent;border:0;border-bottom:1px solid #888;color:#fff;padding:12px 0;font:inherit}
+.ct button{background:#C6FF3D;border:0;padding:14px;font:700 1rem 'Space Grotesk';cursor:pointer;color:#111}
+@media(max-width:700px){.int{grid-template-columns:1fr}
+.pj{grid-column:span 6!important}}

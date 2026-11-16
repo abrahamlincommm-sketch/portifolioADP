@@ -1,0 +1,33 @@
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+a{color:inherit}
+.demo{background:#111;color:#ddd;font:500 12px system-ui;text-align:center;padding:8px}
+.wa{position:fixed;right:16px;bottom:16px;background:#25D366;color:#063;font:600 15px system-ui;text-decoration:none;padding:12px 18px;border-radius:99px;z-index:99}
+.pg{display:none}
+.pg.on{display:block}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}
+html{scroll-behavior:auto}
+.mq span{padding-left:0!important}}
+body{background:#FFF4C2;color:#1F2A1F;font:17px/1.6 Figtree,sans-serif;overflow-x:hidden}
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;font:800 1.4rem 'Bricolage Grotesque'}
+.top a{background:#1F2A1F;color:#FFF4C2;border-radius:99px;padding:10px 20px;text-decoration:none;font:700 .95rem Figtree}
+h1{font:800 clamp(3rem,11vw,8rem)/.9 'Bricolage Grotesque';padding:3vh 5vw;letter-spacing:-.03em}
+h1 em{font-style:normal;background:#FF6F59;color:#fff;border-radius:40px;padding:0 .25em;display:inline-block;transform:rotate(-3deg)}
+.mq{background:#0F766E;color:#FFF4C2;overflow:hidden;white-space:nowrap;padding:14px 0;transform:rotate(-1.2deg);margin:30px -2vw;font:800 1.4rem 'Bricolage Grotesque'}
+.mq span{display:inline-block;padding-left:100%;animation:m 22s linear infinite}
+@keyframes m{to{transform:translateX(-100%)}}
+.st{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;padding:30px 5vw}
+.st div{border-radius:30px;padding:26px;color:#fff;min-height:170px}
+.st div:nth-child(1){background:#FF6F59;transform:rotate(-2deg)}
+.st div:nth-child(2){background:#3B8FCC;transform:rotate(1.5deg)}
+.st div:nth-child(3){background:#0F766E;transform:rotate(-1deg)}
+.st div:nth-child(4){background:#F2A900;color:#1F2A1F;transform:rotate(2deg)}
+.st h3{font:800 1.6rem 'Bricolage Grotesque'}
+h2{font:800 2rem 'Bricolage Grotesque';padding:20px 5vw 0}
+.pets{display:flex;gap:18px;flex-wrap:wrap;padding:20px 5vw}
+.pets div{width:150px;text-align:center;font-weight:600}
+.pets i{display:grid;place-items:center;width:130px;height:130px;margin:0 auto 8px;border-radius:50% 50% 50% 12%;background:#fff;border:4px solid #1F2A1F;font:800 2.2rem 'Bricolage Grotesque';font-style:normal}
+.fm{margin:30px 5vw 90px;background:#fff;border:4px solid #1F2A1F;border-radius:36px;padding:30px;max-width:560px;box-shadow:10px 10px 0 #1F2A1F}
+.fm h2{padding:0}
+.fm input,.fm select{display:block;width:100%;margin:10px 0;padding:14px;border:3px solid #1F2A1F;border-radius:16px;font:inherit}
+.fm button{background:#FF6F59;color:#fff;border:3px solid #1F2A1F;border-radius:99px;padding:14px 26px;font:800 1rem Figtree;cursor:pointer}

@@ -69,3 +69,7 @@ details p{margin-top:8px;opacity:.85}
 @media(max-width:700px){.two,.ct,.nw{grid-template-columns:1fr}
 .n:first-child{grid-column:auto}
 .por{max-width:240px}}
+
+.c{text-align:center}.lead{max-width:56ch;margin:0 auto 30px;opacity:.8}.sx{margin-bottom:70px}
+.str{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border-radius:26px;box-shadow:0 14px 30px -22px #08808B}.str div{padding:22px 26px;border-right:1px solid #D8F1F3}.str div:last-child{border:0}.str b{display:block;color:#08808B;font-family:Outfit;font-size:1.1rem}
+@media(max-width:700px){.str{grid-template-columns:1fr}.str div{border-right:0;border-bottom:1px solid #D8F1F3}}
